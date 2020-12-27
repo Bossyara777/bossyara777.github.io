@@ -1,0 +1,60 @@
+body {
+	background-color: #FFB9AA;
+}
+p {
+	text-align: center;
+   color: #154360 ;
+}
+div#vstup {
+	text-align: center;
+   color: #154360 ;
+}
+
+
+.h1  {
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+    line-height: 50px;
+    color: #343434;
+}
+
+.h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+    line-height: 40px;
+    color: #343434;
+}
+
+.h3 {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 30px;
+    line-height: 30px;
+    color: #343434;
+}
+.mer {
+text-decoration:  
+}
+.up {
+	text-align: center;
+	font-style: italic;
+}
+
+.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #FC8600;
+}	
+span.ssil-2 {
+	text-align: left;
+	font-style: italic;
+}
+.spisok {
+	text-align: left;
+    font-size: 15px;
+}
+
