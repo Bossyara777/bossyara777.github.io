@@ -1,0 +1,113 @@
+.header {
+  margin: 60px auto;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.header span {
+  display: block;
+}
+.section{
+  padding: 30px 0;
+}
+.video {
+  margin-bottom: 30px
+}
+.form-header, .section-header, .section-client {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.form {
+  border: 5px solid #3333cc;
+  padding: 30px 20px;
+}
+.form input{
+  margin-bottom: 12px;
+}
+.d-grid {
+  
+  margin: 10px auto;
+}
+.form-btn {
+  background-color: #3333cc;
+}
+.feature, .section-client {
+  margin: 60px auto ;
+}
+.future-btn {
+  margin: 12px auto ;
+}
+.feature p {
+  margin-top: 20px;
+}
+.future-box{
+  height: 160px;
+}
+.img-responsive {
+  margin: 10px;
+  text-align: center;
+}
+
+
+
+
+/**.container, .col-lg-6 {
+  border: 2px solid red;
+}**/
+
+
+
+
+/**.col-lg-3>.feature-box>img[src="img/$$$.png"][alt="$ преимущество"]+p[Первое преимущество]*4**/
+
+/**<div class="container">
+  <div class="row">
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+    <img src="img/001.png" class="img-responsive" alt="image-1">
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+   	<img src="img/002.png" class="img-responsive" alt="image-2">
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+   	<img src="img/003.png" class="img-responsive" alt="image-3">
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+   	<img src="img/004.png" class="img-responsive" alt="image-4">
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+   	<img src="img/005.png" class="img-responsive" alt="image-5">
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+   	<img src="img/006.png" class="img-responsive" alt="image-6">
+   </div>
+  </div>
+ </div>
+
+
+ <div class="col-lg-6 offset-lg-1 col-md-8 offset-md-2">
+ **/
+
+ /**<div class="col-lg-3 col-md-6">
+      <div class="feature-box">
+        <img src="img/001.png" alt="1 преимущество">
+        <p>Первое преимущество</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="feature-box">
+        <img src="img/002.png" alt="2 преимущество">
+        <p>Второе преимущество</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="feature-box">
+        <img src="img/003.png" alt="3 преимущество">
+        <p>Третье преимущество</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="feature-box">
+        <img src="img/004.png" alt="4 преимущество">
+        <p>Четвёртое преимущество</p>
+      </div>
+    </div>**/
