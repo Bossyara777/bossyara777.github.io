@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 15px;
+}
+.image {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+	background: #000;
+}
+img {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+}
+.dark-1 {
+	opacity:0; 
+}
+.dark-1:hover{
+	opacity:0.5; 
+}
+.dark-2 {
+	opacity:0; 
+}
+.dark-2:hover{
+	opacity:0.5; 
+}
+.dark-3 {
+	opacity:0; 
+}
+.dark-3:hover{
+	opacity:0.5; 
+}
+.dark-4 {
+	opacity:0; 
+}
+.dark-4:hover{
+	opacity:0.5; 
+}
+.image-one {
+	background: url(../img/1.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-two {
+	background: url(../img/2.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-three {
+	background: url(../img/3.jpg)  center no-repeat;
+	background-size: cover;
+}
+.image-four {
+	background: url(../img/4.jpg) center no-repeat;
+	background-size: cover;
+}
+.button-one {
+ border: none;
+ font-weight: 700;
+ font-size: 14px;
+ color: white;
+ padding: .8em 1em calc(.8em + 3px);
+ border-radius: 3px;
+ background: rgb(64,199,129);
+ box-shadow: 0 -3px rgb(53,167,110) inset;
+ transition: 0.1s ease-in;
+}
+.button-one:hover {
+ border: none;
+ font-weight: 700;
+ font-size: 14px;
+ color: white;
+ margin-top: 2px;
+ padding: .8em 1em calc(.8em + 3px);
+ border-radius: 3px;
+ background: rgb(0,128,128);
+ box-shadow: 0 -3px rgb(0,100,100) inset;
+ transition: 0.1s ease-in;
+}
+.button-two {
+ display: inline-block;
+ color: white;
+ padding: .5em 2em;
+ border: none;
+ border-width: 2px 0;
+ border-style: solid none;
+ border-color: #FDBE33 #000 #D77206;
+ border-radius: 6px;
+ background: linear-gradient(#F3AE0F, #E38916) #E38916;
+ transition: 0.2s;
+ transition-property: all;
+ transition-duration: 0.5s;
+ transition-delay: 0s;
+}
+.button-two:hover {
+ display: inline-block;
+ color: white;
+ padding: .7em 4em;
+ border: none;
+ border-width: 2px 0;
+ border-style: solid none;
+ border-color: #FDBE33 #000 #D77206;
+ border-radius: 6px;
+ background: linear-gradient(#F3AE0F, #E38916) #E38916;
+ transition: 0.2s ease;
+}
