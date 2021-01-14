@@ -1,0 +1,23 @@
+body {
+	background: url(../img/2.jpg) no-repeat;
+	background-size: 100%;
+}
+.btn-success {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
+a {
+  display: inline-block;
+  margin: 20px;
+}
+img {
+  width: 100%;
+}
+.modal-title {
+  padding: 0;
+  text-align: left;
+}
+
+/*filter: blur(10px);*/
