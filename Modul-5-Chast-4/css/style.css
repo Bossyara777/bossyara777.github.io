@@ -41,10 +41,6 @@ section {
   font-size: 3.6rem;
   text-align: center;
 }
-.container {
-  width: 100%;
-  padding: 0 0;
-}
 /**main**/
 .main {
   padding: 3rem 5rem;
@@ -240,6 +236,11 @@ section {
   right: 0;
   background: url(../img/right-arrow.svg) center no-repeat;
   background-size: 70%;
+}
+@media (max-width: 1199px) {
+  .container {
+    margin: 0;
+  }
 }
 @media (max-width: 991px) {
   .main {
