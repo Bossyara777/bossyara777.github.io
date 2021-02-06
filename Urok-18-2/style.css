@@ -1,0 +1,112 @@
+/* -----  google Font  -----*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+  padding:0; 
+  margin:0;
+}
+body{
+ background-image: url('Fon.png');
+ background-size: contain;	
+}
+
+.main {
+ font-family: 'Ubuntu', sans-serif;
+ font-size: 15px;
+ color: #777777;
+ line-height: 1.4;
+ width: 700px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.main a {
+ font-weight: 400;
+ text-decoration: none;
+}
+.main h2 {
+ margin-top: 40px;	
+ font-weight: 700;
+ color: #00ccff;
+ font-size: 36px;
+ text-transform: uppercase;
+ text-align: center;
+}
+.main h3 {
+ font-weight: 400;
+ color: #00ccff;
+ font-size: 24px;
+ text-transform: uppercase;
+ text-align: center;
+}
+.hr-line {
+ width: 110px;	
+ margin: 10px auto 30px auto;
+ padding: 0;
+ height: 0;
+ border: none;
+ border-top: 1px solid #ccc;
+
+}
+.panel-heading {
+ margin-top: 5px;
+}
+.panel-heading a {
+ background: #00ccff;
+ color: #ffffff;
+ display: block;
+ padding: 10px 40px 10px 15px;
+ position: relative;
+ transition: 0.3s;
+ font-size: 18px;
+ text-align: center;
+}
+.panel-heading a:hover {
+ background: #0c5673;
+}
+.panel-heading a i {
+ font-size: 16px;
+ width: 30px;
+}
+.panel-heading a::after {
+ content: "\f107";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ transition: 0.3s;
+}
+.panel-heading.in a::after {
+ transform: rotate(180deg);
+}
+.panel-heading.in a {
+ background: #09afdf;
+}
+.panel-collapse {
+ display: none;
+ padding-bottom: 20px;
+}
+.panel-body p {
+	font-size: 16px;
+	padding: 5px 25px 5px 25px;
+	margin: 0px 5px 5px 5px;
+	border-right: 3px solid #cccccc;
+	border-left: 3px solid #cccccc;
+	border-bottom: 3px solid #cccccc;
+	border-radius: 0 0 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
