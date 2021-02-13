@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма для авторизации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.min.js"></script>
+</head>
+<body>
+<div class="container wow fadeInDown" data-wow-duration="1s">
+ <div class="row">
+  <div class="col-md-offset-3 col-md-6">
+
+
+   <div class="dws-form-wrapper center-block">
+		
+	  <div class="dws-form">
+
+		  <!-- Вкладки на CSS -->   
+        <input type="radio" class="tab1" id="tab-1" name="tabs" checked>
+        <label class="tab" for="tab-1" title="Вкладка 1">Вход</label>
+
+        <input type="radio" name="tabs" id="tab-2">
+        <label class="tab"  for="tab-2" title="Вкладка 2">Регистрация</label> 
+      
+       <!-- Форма входа Bootstrap -->
+       <form id="form-1" class="tab-form">
+        <div class="box-input-wrapper">
+         <div class="form-group box-input wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+           <input type="email" class="form-control input" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ваше имя"required>
+         </div>
+         <div class="form-group box-input wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
+           <input type="password" class="form-control input" id="exampleInputPassword" placeholder="Пароль" required>
+         </div>
+        
+         <a href="#" class="button wow tada" data-wow-duration="1s" data-wow-delay="2s" data-wow-iteration="2">Войти</a>
+         <a href="#" class="forgot">Забыли пароль?</a>
+         <div class="forgot2">
+             <input type="checkbox" id="checkbox">
+             <label for="checkbox" class="checkbox"><a href="#" class="forgot-2">Запомнить меня</a></label>
+         </div>
+        </div> 
+       </form>  
+      
+      
+      <!-- Форма регистрация Bootstrap -->
+       <form id="form-2" class="tab-form">
+         <div class="box-input-wrapper">
+            
+          <div class="form-group box-input">
+            <input type="email" class="form-control input" id="exampleInputNamemail1" aria-describedby="InputName" placeholder="Введите свое имя" required>
+          </div>
+          <div class="form-group box-input">
+            <input type="text" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите E-mail адрес" required>
+          </div>
+          <div class="form-group box-input">
+            <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Введите пароль" required>
+          </div>
+          <a href="#" class="button-reg">Регистрация</a>
+          
+          
+         </div> 
+        </form>   
+      
+
+		</div>
+	</div>
+  </div>
+ </div>   
+</div>
+
+ 
+ <script>new WOW().init();</script>
+</body>
+</html>
+

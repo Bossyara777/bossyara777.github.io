@@ -1,0 +1,537 @@
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Myriad Pro, sans-serif;
+ background-image: url('../img/bg.jpg');
+ -webkit-background-size: cover;
+ background-size: cover;
+}
+.container {
+  margin-top: 5rem;
+}
+/* -----  Выравнивание по середине  -----*/
+.dws-wrapper {
+ display: flex;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+}
+.dws-form-wrapper {
+ width: 46%;
+ height: 60%;
+ position: relative;
+ left: 25%;
+ top: 50%;
+ 
+}
+
+.box-input, .form-group {
+ margin-top: 5%;	
+ margin-left: 10%;
+ margin-right: 12%;
+}
+
+.box-input-wrapper {
+ position: relative;
+ width:100%; 
+ height: 100%;
+ background-color: #000;
+ padding-top: 5%;
+ padding-bottom: 2%;
+ border: 1px solid #66ccff;
+ border-radius: 1vh;
+}
+
+.dws-form {
+ background-color: rgba(255, 255, 255, 0);
+ width: 100%;
+ height: 100%;
+ padding: 0px;
+ margin: 0;
+ top: 50%;
+ position: relative;
+}
+.dws-form a {
+ text-decoration: none;
+ transition: .5s;
+ color: #ff0000;
+}
+.dws-form a:hover {
+ color: #ff6666;
+}
+.checkbox {
+ padding-top: 4px;
+}
+.checkbox a {
+ color: #666666;
+ font-size: 15px;
+ font-weight: 600;
+}
+.checkbox a:hover {
+ color: #fff;
+}
+
+/*.dws-form ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}*/
+.dws-form input {
+ display: block;
+ width: 100%;
+}
+.tab-form {
+ background-color: #0099cc;
+ display: none; 
+ padding: 25px;
+ border: 1px solid #99ccff;
+ border-radius: 1vh;
+}
+.tab-form.active,
+#tab-1:checked ~ #form-1,
+#tab-2:checked ~ #form-2 {
+ display: block;
+}
+label.tab {
+ background-color: #fff;	
+ color: #000;
+ font-weight: 600;
+ padding: 6px 20px;
+ display: inline-block;
+ border-radius: 5px 5px 0 0;
+ border-top: 1px solid #99ccff;
+ border-left: 1px solid #99ccff;
+ border-right: 1px solid #99ccff;
+ margin-bottom: -1px;
+ cursor: pointer;
+}
+label.tab.active,
+input[name="tabs"]:checked + label {
+ background-color: #0099cc;
+ text-shadow: 2px 2px 1px #003366;
+ color: #fff;}
+
+
+label[for='tab-1']{
+ margin-left:5%; 
+}
+
+input[name="tabs"] {
+ display: none;
+}
+
+/* Формы */
+.input {
+ background: #000;
+ background-image: url(data:image/png;base64,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);
+ box-shadow: inset 50px 50px 30px rgba(0,0,0,0.5) ;
+ font-size: 20px;
+ padding: 12px 14px;
+ box-sizing: border-box;
+ margin-top: 35px;
+ color: #1e8da6;
+ outline: none;
+ border-radius: 0.7vh;
+}
+
+::-webkit-input-placeholder {color:#c4c9c9; padding: 0 20px;}/* webkit */
+::-moz-placeholder          {color:#298cad; padding: 0 20px;}/* Firefox 19+ */
+:-moz-placeholder           {color:#298cad; padding: 0 20px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#298cad; padding: 0 20px;}/* IE */
+
+/* Плавающий текст */
+.box-input {
+ position: relative;
+}
+.box-input input {
+ height: 70px;	
+ width: 85%;
+ margin: 2rem auto;
+ border: none;
+ padding: 10px 0;
+}
+.box-input label {
+ position: absolute;
+ top: 0;
+ left: 0;
+ padding-top: 3%;
+ padding-left: 4%;
+ color: #fff;
+ font-size: 24px;
+ transition: .5s;
+ pointer-events: none;
+}
+.box-input input:focus ~ label,
+.box-input input:valid ~ label {
+ top: -42px;
+ font-size: 24px;
+ color: #33d3fe;
+}
+
+/* Эффект кнопки */
+a.button {
+
+ width: 130px;
+ background: radial-gradient(circle at 50px, #ff0000, #990000);
+ color: #ffffff;
+ font-size: 18px;
+ display: block;
+ text-align: center;
+ line-height: 40px;
+ margin-top: 15%;
+ position: relative;
+ left: 82%;
+ z-index: 1;
+ overflow: hidden;
+}
+
+a.button:hover {
+ color: #ffffff;
+}
+.button::before, .button::after {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: radial-gradient(circle at 50px, #ff3333, #ff0000); 
+ position: absolute;
+ top: 0;
+ left: -100%;
+ transition: .3s;
+ z-index: -1;
+}
+
+.button::after {
+ background: radial-gradient(circle at 50px, #cc3333, #cc0000);
+ top: 100%;
+ left: 0;
+ transition-delay: .2s;
+}
+.button:hover::before {
+ left: 0;
+}
+.button:hover::after {
+ top: 0;
+}
+
+a.button-reg {
+ width: 190px;
+ background: radial-gradient(circle at 50px, #ff0000, #990000);
+ color: #ffffff;
+ font-size: 18px;
+ display: block;
+ text-align: center;
+ line-height: 40px;
+ margin-top: 30px;
+ margin-bottom: 10px;
+ position: relative;
+ bottom: 2%;
+ left: 50%;
+ z-index: 1;
+ overflow: hidden;
+}
+a.button-reg:hover {
+ color: #ffffff;
+}
+.button-reg::before, .button-reg::after {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: radial-gradient(circle at 50px, #ff3333, #ff0000); /*#27bfdc*/
+ position: absolute;
+ top: 0;
+ left: -100%;
+ transition: .3s;
+ z-index: -1;
+}
+.button-reg::after {
+ background: radial-gradient(circle at 50px, #cc3333, #cc0000); /*36d2ff*/
+ top: 100%;
+ left: 0;
+ transition-delay: .2s;
+}
+
+.button-reg:hover::before {
+ left: 0;
+}
+.button-reg:hover::after {
+ top: 0;
+}
+
+a.forgot {
+ position: relative;
+ left: 13%;	
+ margin-bottom: 82%;
+}
+.forgot2 {
+ position: absolute;
+ left: 13%;	
+ bottom: 30%;
+ font-size: 12px;
+}
+
+/* Анимированный чекбокс */
+.recover {
+ position: relative;
+ left: 9%;	
+ bottom: 2%;
+ font-size: 12px;
+}
+label[for='ckbox'], label[for='checkbox'] {
+ color: #fff;	
+ cursor: pointer;
+ padding-left: 35px;
+ width: 250px;
+ display: block;
+ position: relative;
+}
+label[for='ckbox']::before, label[for='checkbox']::before {
+ content: '';
+ position: absolute;
+ border: 2px solid #c4c9c9;
+ width: 18px;
+ height: 18px;
+ top: 0;
+ left: 0;
+ border-radius: 3px;
+ transition: .2s;
+}
+#ckbox:checked + label::before {
+ border-top: 2px solid transparent;
+ border-left: 2px solid transparent;
+ border-right: 2px solid #408cc2;
+ border-bottom: 2px solid #408cc2;
+ transform: rotate(40deg);
+ width: 12px;
+ height: 22px;
+ transform-origin: 100% 100%;
+ top: -4px;
+ left: -5px;
+}
+#checkbox:checked + label::before {
+ border-top: 2px solid transparent;
+ border-left: 2px solid transparent;
+ border-right: 2px solid #408cc2;
+ border-bottom: 2px solid #408cc2;
+ transform: rotate(40deg);
+ width: 12px;
+ height: 22px;
+ transform-origin: 100% 100%;
+ top: -4px;
+ left: -5px;
+}
+
+#ckbox:not(:checked),
+#ckbox:checked {
+ display: none;
+}
+#checkbox:not(:checked),
+#checkbox:checked {
+ display: none;
+}
+.del {
+ display: none;
+}
+
+@media (min-width: 299px) {
+ a.button {
+  width: 80px;	
+  left: 65%;
+  font-size: 16px;
+  line-height: 30px;
+ }
+ a.button-reg {
+  width: 80px;	
+  bottom: 2%;
+  left: 8%;
+  font-size: 12px;
+
+ }
+ .box-input {
+  margin-top: 3%;	
+  margin-left: 10px;
+  margin-right: 10px;	
+ }
+ .input {
+  margin-top: 5%;
+  font-size: 16px;
+  padding: 8px 10px;	
+ }
+ a.forgot {
+  font-size: 10px;
+ }
+ a.forgot-2 {
+  font-size: 10px;
+ }
+
+ label.tab {
+ padding: 2px 5px;
+ font-size: 10px;
+ }
+}
+@media (min-width: 499px) {
+ a.button {
+ width: 90px;	
+ left: 72%;
+ font-size: 16px;
+ line-height: 30px;}
+ a.button-reg {
+ width: 120px;	
+ bottom: 2%;
+ left: 30%;
+ }
+ a.forgot {
+  font-size: 12px;
+ }
+ label.tab {
+ padding: 6px 10px;
+ font-size: 14px;
+ }
+}
+
+@media (min-width: 599px) {
+ a.button {	
+ width: 130px;
+ font-size: 18px;
+ line-height: 40px;	
+ left: 67%;}
+a.button-reg {
+ width: 150px;
+ font-size: 15px;
+ left: 50%;
+ }
+ a.forgot {
+  font-size: 14px;
+ }
+  a.forgot-2 {
+  font-size: 14px;
+ }
+}
+
+@media (min-width: 699px) {
+ a.button {
+ left: 72%;}
+}
+
+@media (min-width: 799px) {
+ a.button {
+ left: 75%;}
+ .input {
+  margin-top: 10%;
+  font-size: 20px;
+  padding: 12px 14px;	
+ }
+ a.button-reg {
+  width: 160px;
+  font-size: 16px;
+  line-height: 35px;
+  left: 67%;
+ }
+ a.forgot {
+  font-size: 16px;
+ }
+}
+
+@media (min-width: 998px) {
+ a.button {
+  left: 79%;}
+ a.button-reg {
+  width: 190px;
+  font-size: 18px;
+  line-height: 40px;
+  margin-right: 5px;
+  left: 65%;
+ }
+}
+
+@media (min-width: 1099px) {
+ a.button {
+ left: 78%;
+ }
+ a.button-reg {
+  left: 70%;
+ } 
+}
+
+@media (min-width: 1199px) {
+ a.button {
+ left: 83%;
+ }
+ a.button-reg {
+  left: 73%;
+ }  
+}
+
+@media (min-width: 1299px) {
+ a.button {
+  left: 83%;
+ }
+ a.button-reg {
+  left: 74%;
+ } 
+}
+@media (min-width: 1399px) {
+ a.button {
+ left: 84%;
+ }
+ a.button-reg {
+   left: 76%;
+ }
+}
+@media (min-width: 1499px) {
+ a.button {
+ left:89%;
+ }
+  a.button-reg {
+   left: 77%;
+ }
+ label.tab {
+ font-size: 18px;
+ }
+}
+
+@media (min-width: 1699px) {
+ a.button-reg {
+   left: 80%;
+ } 
+}
+
+@media (min-width: 1999px) {
+ a.button {
+ left:90%;
+ }
+ a.button-reg {
+   left: 84%;
+ } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
