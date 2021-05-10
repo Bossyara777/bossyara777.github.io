@@ -1,0 +1,94 @@
+/*Fonts family*/
+
+
+/*Colors*/
+/*Basic setting*/
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  background-color: rgb(230, 228, 228);
+  margin-top: 5rem;
+
+}
+
+img.logo-p {
+  width: 23%;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 5.5rem;
+  margin-left: 1rem;
+}
+.logo-p1 {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.logo-p2 {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+
+}
+.logo-p3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.logo-p4 {
+  width: 80%;
+  display: inline-block;
+  font-size: 14px;  
+  font-weight: 600;
+}
+.red-column {
+  height: 430px;
+  width: 380px;
+  bottom: 25.8%;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  color: white;
+}
+h2 {
+  margin-top: 5rem;
+  font-size: 30px;
+  text-align: center;
+}  
+.contact {
+  font-size: 18px;  
+  font-weight: 500;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+iframe {
+  width: 1312px;
+}
+#map {
+  width: 1312px;
+  height: 430px;
+}
+
+
+
+
